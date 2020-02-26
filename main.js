@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function(){
         }
       }).catch(error => {
         document.getElementById("modal").classList.remove("hidden")
-        document.getElementById("modal-message").innerHTML = error.message
+        document.getElementById("modal-message").innerHTML = error
         setTimeout(function(){
           document.getElementById("modal").classList.add("hidden")
         }, 5000)
